@@ -386,6 +386,17 @@ p {
   aspect-ratio: 16 / 9;
   background-color: var(--color-light-gray);
   overflow: hidden;
+  position: relative;
+}
+
+.card-image:empty::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, #E8E8E8 0%, #D0D0D0 100%);
 }
 
 .card-image img {
@@ -686,6 +697,20 @@ p {
 .filter-btn.active {
   background-color: var(--color-champagne);
   color: var(--color-primary-dark);
+}
+
+.filter-clear-btn {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--font-size-small);
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+  border-radius: 4px;
+  transition: all var(--transition-fast);
+  margin-left: auto;
+}
+
+.filter-clear-btn:hover {
+  background-color: var(--color-dark-hover);
 }
 
 /* --------------------------------------------------------------------------
