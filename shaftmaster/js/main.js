@@ -114,29 +114,25 @@
     // Apply filters function
     function applyFilters(cards, filters) {
       cards.forEach(function(card) {
-        const cardFlex = card.getAttribute('data-flex-regular') || card.getAttribute('data-flex-stiff') || card.getAttribute('data-flex-xstiff') || '';
-        const cardWeight = card.getAttribute('data-weight-light') || card.getAttribute('data-weight-mid') || card.getAttribute('data-weight-heavy') || '';
-        const cardType = card.getAttribute('data-type-graphite') || card.getAttribute('data-type-steel') || '';
-
         // Check each category
         let showCard = true;
 
-        // Flex filter
+        // Flex filter - filter value is like "flex-regular", we need to check "data-flex-regular"
         if (filters.flex !== 'all') {
-          const hasFlex = card.getAttribute('data-' + filters.flex);
-          if (!hasFlex) showCard = false;
+          const flexAttr = 'data-' + filters.flex; // "data-flex-regular"
+          if (!card.hasAttribute(flexAttr)) showCard = false;
         }
 
         // Weight filter
         if (filters.weight !== 'all' && showCard) {
-          const hasWeight = card.getAttribute('data-' + filters.weight);
-          if (!hasWeight) showCard = false;
+          const weightAttr = 'data-' + filters.weight; // "data-weight-mid"
+          if (!card.hasAttribute(weightAttr)) showCard = false;
         }
 
         // Type filter
         if (filters.type !== 'all' && showCard) {
-          const hasType = card.getAttribute('data-' + filters.type);
-          if (!hasType) showCard = false;
+          const typeAttr = 'data-' + filters.type; // "data-type-graphite"
+          if (!card.hasAttribute(typeAttr)) showCard = false;
         }
 
         if (showCard) {
