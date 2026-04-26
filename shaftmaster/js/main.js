@@ -67,14 +67,21 @@
           // Get filter type category
           const filterValue = this.getAttribute('data-filter');
           const category = filterValue.split('-')[0];
+          const isAllButton = filterValue.endsWith('-all');
 
           // Update active state for buttons in same category
           const categoryButtons = document.querySelectorAll('[data-filter^="' + category + '-"]');
           categoryButtons.forEach(function(b) { b.classList.remove('active'); });
           this.classList.add('active');
 
-          // Store active filter
-          activeFilters[category] = filterValue;
+          // If clicking "All" button in a category, clear ONLY that category's filter
+          // while keeping other categories' filters intact
+          if (isAllButton) {
+            activeFilters[category] = 'all';
+          } else {
+            // Store active filter (specific value like "flex-regular")
+            activeFilters[category] = filterValue;
+          }
 
           // Apply all filters with AND logic
           applyFilters(reviewCards, activeFilters);
@@ -119,19 +126,22 @@
 
         // Flex filter - filter value is like "flex-regular", we need to check "data-flex-regular"
         if (filters.flex !== 'all') {
-          const flexAttr = 'data-' + filters.flex; // "data-flex-regular"
+          const flexValue = filters.flex.replace('flex-', ''); // "regular"
+          const flexAttr = 'data-flex-' + flexValue;
           if (!card.hasAttribute(flexAttr)) showCard = false;
         }
 
         // Weight filter
         if (filters.weight !== 'all' && showCard) {
-          const weightAttr = 'data-' + filters.weight; // "data-weight-mid"
+          const weightValue = filters.weight.replace('weight-', ''); // "mid"
+          const weightAttr = 'data-weight-' + weightValue;
           if (!card.hasAttribute(weightAttr)) showCard = false;
         }
 
         // Type filter
         if (filters.type !== 'all' && showCard) {
-          const typeAttr = 'data-' + filters.type; // "data-type-graphite"
+          const typeValue = filters.type.replace('type-', ''); // "graphite"
+          const typeAttr = 'data-type-' + typeValue;
           if (!card.hasAttribute(typeAttr)) showCard = false;
         }
 
