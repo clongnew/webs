@@ -133,7 +133,7 @@
 
         // Weight filter
         if (filters.weight !== 'all' && showCard) {
-          const weightValue = filters.weight.replace('weight-', ''); // "mid"
+          const weightValue = filters.weight.replace('weight-', ''); // "light", "mid", or "heavy"
           const weightAttr = 'data-weight-' + weightValue;
           if (!card.hasAttribute(weightAttr)) showCard = false;
         }

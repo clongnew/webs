@@ -19,9 +19,9 @@ const homeGuideItems = [
 
 // ============ 首页 Latest Reviews 配置 =============
 const homeReviewItems = [
+  { url: './reviews/unig-1k-carbon-review.html' },
   { url: './reviews/mitsubishi-kuro-kage-black-review.html' },
-  { url: './reviews/tensei-av-raw-review.html' },
-  { url: './reviews/ventus-tr-review.html' }
+  { url: './reviews/tensei-av-raw-review.html' }
 ];
 
 // ============ 首页 Latest News 配置 =============
@@ -163,17 +163,20 @@ function renderCard(item, containerId) {
   // 处理图片URL - 确保是完整的绝对URL
   let imgTag = '';
   if (imageUrl) {
-    // 如果是相对路径，转换为绝对路径
+    // 如果是相对路径，转换为正确的路径
     let finalSrc = imageUrl;
     if (imageUrl.startsWith('../')) {
-      // ../imgs/xxx.jpg -> /imgs/xxx.jpg
-      finalSrc = imageUrl.replace(/^\.\.\//, '/');
+      // ../imgs/xxx.jpg -> imgs/xxx.jpg (相对路径)
+      finalSrc = imageUrl.replace(/^\.\.\//, '');
     } else if (imageUrl.startsWith('./')) {
-      // ./imgs/xxx.jpg -> /imgs/xxx.jpg
-      finalSrc = imageUrl.replace(/^\.\//, '/');
+      // ./imgs/xxx.jpg -> imgs/xxx.jpg
+      finalSrc = imageUrl.replace(/^\.\//, '');
     } else if (!imageUrl.startsWith('http') && !imageUrl.startsWith('data:') && !imageUrl.startsWith('/')) {
-      // imgs/xxx.jpg -> /imgs/xxx.jpg
-      finalSrc = '/' + imageUrl;
+      // imgs/xxx.jpg -> imgs/xxx.jpg (保持不变)
+      finalSrc = imageUrl;
+    } else if (imageUrl.startsWith('/')) {
+      // /imgs/xxx.jpg -> imgs/xxx.jpg
+      finalSrc = imageUrl.replace(/^\//, '');
     }
 
     console.log('[HomeCards] Image URL transformed:', imageUrl, '->', finalSrc);
@@ -223,9 +226,17 @@ function renderFeaturedCard(item, containerId) {
   if (imageUrl) {
     let finalSrc = imageUrl;
     if (imageUrl.startsWith('../')) {
-      finalSrc = imageUrl.replace('../', './');
-    } else if (!imageUrl.startsWith('http') && !imageUrl.startsWith('data:')) {
-      finalSrc = './' + imageUrl;
+      // ../imgs/xxx.jpg -> imgs/xxx.jpg (相对路径)
+      finalSrc = imageUrl.replace(/^\.\.\//, '');
+    } else if (imageUrl.startsWith('./')) {
+      // ./imgs/xxx.jpg -> imgs/xxx.jpg
+      finalSrc = imageUrl.replace(/^\.\//, '');
+    } else if (!imageUrl.startsWith('http') && !imageUrl.startsWith('data:') && !imageUrl.startsWith('/')) {
+      // imgs/xxx.jpg -> imgs/xxx.jpg (保持不变)
+      finalSrc = imageUrl;
+    } else if (imageUrl.startsWith('/')) {
+      // /imgs/xxx.jpg -> imgs/xxx.jpg
+      finalSrc = imageUrl.replace(/^\//, '');
     }
 
     imgTag = `<img src="${finalSrc}" alt="${title}" style="width:100%; height:100%; object-fit:cover;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 600 400%27%3E%3Crect fill=%27%23E0E0E0%27 width=%27600%27 height=%27400%27/%3E%3Ctext fill=%27%23666%27 font-family=%27Inter%27 font-size=%2724%27 x=%27300%27 y=%27200%27 text-anchor=%27middle%27%3ENo Image%3C/text%3E%3C/svg%3E'">`;
