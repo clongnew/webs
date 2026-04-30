@@ -1,18 +1,7 @@
----
-AIGC:
-    ContentProducer: Minimax Agent AI
-    ContentPropagator: Minimax Agent AI
-    Label: AIGC
-    ProduceID: "00000000000000000000000000000000"
-    PropagateID: "00000000000000000000000000000000"
-    ReservedCode1: 304402206e5badd4b6a00ac3154e2194a6a554b1637ec8c5f23c3632f4cbc61bf4ec6d33022045aa4a644e54fd1f8e189405f1e8a83a3fe78836792568ff9bb9323319a77ce4
-    ReservedCode2: 30440220509b0aadd2c3a41b735ed3270ea1ec1a20d4bc1e94aaa85069e191dcfcf26cdc022046fd09044f51791574ba056c3ff7106e500bfb5ef7746c37add5100a9e7a0aba
----
-
 # Golf Shaft Review Website - Design Specification
 
 ## Project Overview
-- **Project Name**: GShaftMaster Pro
+- **Project Name**: ShaftMaster Pro
 - **Project Type**: Static multi-page website (4 HTML pages)
 - **Core Functionality**: Professional golf shaft reviews, guides, and industry news
 - **Target Users**: Golf enthusiasts, amateur and professional golfers looking for unbiased shaft recommendations
