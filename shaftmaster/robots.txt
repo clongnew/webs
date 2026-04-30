@@ -1,11 +1,11 @@
-# Robots.txt for ShaftMaster Pro
+# Robots.txt for GShaftMaster Pro
 # Golf Shaft Reviews and Guides Website
 
 User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://shaftmaster.pro/sitemap.xml
+Sitemap: https://gshaftmaster.com/sitemap.xml
 
 # Disallow admin and private directories
 Disallow: /admin/

@@ -12,7 +12,7 @@ AIGC:
 # Golf Shaft Review Website - Design Specification
 
 ## Project Overview
-- **Project Name**: ShaftMaster Pro
+- **Project Name**: GShaftMaster Pro
 - **Project Type**: Static multi-page website (4 HTML pages)
 - **Core Functionality**: Professional golf shaft reviews, guides, and industry news
 - **Target Users**: Golf enthusiasts, amateur and professional golfers looking for unbiased shaft recommendations

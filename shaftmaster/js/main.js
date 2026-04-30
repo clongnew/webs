@@ -1,5 +1,5 @@
 /**
- * ShaftMaster Pro - Main JavaScript
+ * GShaftMaster Pro - Main JavaScript
  * Professional Golf Shaft Review Website
  */
 
@@ -14,6 +14,7 @@
     initFilters();
     initScrollEffects();
     initSmoothScroll();
+    initNewsletterForms();
   }
 
   // Mobile Navigation
@@ -196,6 +197,36 @@
             behavior: 'smooth'
           });
         }
+      });
+    });
+  }
+
+  function initNewsletterForms() {
+    const newsletterForms = document.querySelectorAll('.newsletter-form');
+
+    if (!newsletterForms.length) return;
+
+    newsletterForms.forEach(function(form) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+
+        let successMessage = form.parentElement.querySelector('.newsletter-success');
+        if (!successMessage) {
+          successMessage = document.createElement('p');
+          successMessage.className = 'newsletter-success';
+          successMessage.setAttribute('role', 'status');
+          successMessage.setAttribute('aria-live', 'polite');
+          successMessage.textContent = 'Subscription successful. Thank you!';
+          form.insertAdjacentElement('afterend', successMessage);
+        }
+
+        successMessage.classList.add('is-visible');
+        form.reset();
       });
     });
   }
