@@ -160,13 +160,13 @@ function renderCard(item, containerId) {
       
       finalSrc = imageUrl.replace(/^\.\.\//, '');
     } else if (imageUrl.startsWith('./')) {
-      // ./imgs/xxx.jpg -> imgs/xxx.jpg
+      // ./imgs/xxx.webp -> imgs/xxx.webp
       finalSrc = imageUrl.replace(/^\.\//, '');
     } else if (!imageUrl.startsWith('http') && !imageUrl.startsWith('data:') && !imageUrl.startsWith('/')) {
       
       finalSrc = imageUrl;
     } else if (imageUrl.startsWith('/')) {
-      // /imgs/xxx.jpg -> imgs/xxx.jpg
+      // /imgs/xxx.webp -> imgs/xxx.webp
       finalSrc = imageUrl.replace(/^\//, '');
     }
 
@@ -220,13 +220,13 @@ function renderFeaturedCard(item, containerId) {
       
       finalSrc = imageUrl.replace(/^\.\.\//, '');
     } else if (imageUrl.startsWith('./')) {
-      // ./imgs/xxx.jpg -> imgs/xxx.jpg
+      // ./imgs/xxx.webp -> imgs/xxx.webp
       finalSrc = imageUrl.replace(/^\.\//, '');
     } else if (!imageUrl.startsWith('http') && !imageUrl.startsWith('data:') && !imageUrl.startsWith('/')) {
       
       finalSrc = imageUrl;
     } else if (imageUrl.startsWith('/')) {
-      // /imgs/xxx.jpg -> imgs/xxx.jpg
+      // /imgs/xxx.webp -> imgs/xxx.webp
       finalSrc = imageUrl.replace(/^\//, '');
     }
 
