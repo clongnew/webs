@@ -11,5 +11,3 @@ Sitemap: https://gshaftmaster.com/sitemap.xml
 Disallow: /admin/
 Disallow: /cgi-bin/
 
-# Crawl-delay (optional, for polite crawling)
-Crawl-delay: 1
