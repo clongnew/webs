@@ -1,202 +1,197 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home page -->
   <url>
-    <loc>https://gshaftmaster.com/</loc>
+    <loc>https://www.gshaftmaster.com/</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://gshaftmaster.com/reviews.html</loc>
+    <loc>https://www.gshaftmaster.com/reviews.html</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://gshaftmaster.com/guides.html</loc>
+    <loc>https://www.gshaftmaster.com/guides.html</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://gshaftmaster.com/news.html</loc>
+    <loc>https://www.gshaftmaster.com/news.html</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- Review Pages -->
+  <!-- Reviews Page -->
   <url>
-    <loc>https://gshaftmaster.com/reviews/unig-1k-carbon-review.html</loc>
+    <loc>https://www.gshaftmaster.com/reviews/unig-1k-carbon-review.html</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gshaftmaster.com/reviews/ventus-tr-review.html</loc>
+    <loc>https://www.gshaftmaster.com/reviews/ventus-tr-review.html</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gshaftmaster.com/reviews/tensei-av-raw-review.html</loc>
+    <loc>https://www.gshaftmaster.com/reviews/tensei-av-raw-review.html</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gshaftmaster.com/reviews/aldila-rogue-silver-130-review.html</loc>
+    <loc>https://www.gshaftmaster.com/reviews/aldila-rogue-silver-130-review.html</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gshaftmaster.com/reviews/graphite-design-tour-ad-di-review.html</loc>
+    <loc>https://www.gshaftmaster.com/reviews/graphite-design-tour-ad-di-review.html</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gshaftmaster.com/reviews/mitsubishi-diamana-rf-review.html</loc>
+    <loc>https://www.gshaftmaster.com/reviews/mitsubishi-diamana-rf-review.html</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gshaftmaster.com/reviews/kbs-tour-120-review.html</loc>
+    <loc>https://www.gshaftmaster.com/reviews/kbs-tour-120-review.html</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gshaftmaster.com/reviews/ust-mamiya-attas-review.html</loc>
+    <loc>https://www.gshaftmaster.com/reviews/ust-mamiya-attas-review.html</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gshaftmaster.com/reviews/oban-kiyoshi-tour-review.html</loc>
+    <loc>https://www.gshaftmaster.com/reviews/oban-kiyoshi-tour-review.html</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gshaftmaster.com/reviews/daiwa-onoff-aka-review.html</loc>
+    <loc>https://www.gshaftmaster.com/reviews/daiwa-onoff-aka-review.html</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gshaftmaster.com/reviews/fujikura-motore-speeder-review.html</loc>
+    <loc>https://www.gshaftmaster.com/reviews/fujikura-motore-speeder-review.html</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gshaftmaster.com/reviews/mitsubishi-kuro-kage-black-review.html</loc>
+    <loc>https://www.gshaftmaster.com/reviews/mitsubishi-kuro-kage-black-review.html</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Guide Pages -->
+  <!-- Guides Page-->
   <url>
-    <loc>https://gshaftmaster.com/guides/guide-shaft-flex.html</loc>
-    <lastmod>2026-05-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://gshaftmaster.com/guides/guide-shaft-weight.html</loc>
+    <loc>https://www.gshaftmaster.com/guides/guide-shaft-flex.html</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gshaftmaster.com/guides/guide-graphite-vs-steel.html</loc>
+    <loc>https://www.gshaftmaster.com/guides/guide-shaft-weight.html</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gshaftmaster.com/guides/guide-senior-flex.html</loc>
+    <loc>https://www.gshaftmaster.com/guides/guide-graphite-vs-steel.html</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://gshaftmaster.com/guides/guide-kick-point-torque.html</loc>
+    <loc>https://www.gshaftmaster.com/guides/guide-senior-flex.html</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- News Pages -->
   <url>
-    <loc>https://gshaftmaster.com/news/news-fujikura-ventus-2025.html</loc>
+    <loc>https://www.gshaftmaster.com/guides/guide-kick-point-torque.html</loc>
+    <lastmod>2026-05-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- News Page -->
+  <url>
+    <loc>https://www.gshaftmaster.com/news/news-fujikura-ventus-2025.html</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://gshaftmaster.com/news/news-mitsubishi-diamana-6th-gen.html</loc>
+    <loc>https://www.gshaftmaster.com/news/news-mitsubishi-diamana-6th-gen.html</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://gshaftmaster.com/news/news-aldila-rogue-infinity.html</loc>
+    <loc>https://www.gshaftmaster.com/news/news-aldila-rogue-infinity.html</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://gshaftmaster.com/news/news-hzrdus-rdx.html</loc>
+    <loc>https://www.gshaftmaster.com/news/news-hzrdus-rdx.html</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://gshaftmaster.com/news/news-tour-ad-gc.html</loc>
+    <loc>https://www.gshaftmaster.com/news/news-tour-ad-gc.html</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://gshaftmaster.com/news/news-diamana-bb-2024.html</loc>
+    <loc>https://www.gshaftmaster.com/news/news-diamana-bb-2024.html</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://gshaftmaster.com/news/news-aldila-rogue-black-hybrid.html</loc>
+    <loc>https://www.gshaftmaster.com/news/news-aldila-rogue-black-hybrid.html</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://gshaftmaster.com/news/news-tour-ad-fi.html</loc>
+    <loc>https://www.gshaftmaster.com/news/news-tour-ad-fi.html</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://gshaftmaster.com/news/news-kbs-tgblack.html</loc>
+    <loc>https://www.gshaftmaster.com/news/news-kbs-tgblack.html</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://gshaftmaster.com/news/news-hzrdus-gen5.html</loc>
+    <loc>https://www.gshaftmaster.com/news/news-hzrdus-gen5.html</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://gshaftmaster.com/news/news-kbs-pgi-lpga-june2024.html</loc>
+    <loc>https://www.gshaftmaster.com/news/news-kbs-pgi-lpga-june2024.html</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
