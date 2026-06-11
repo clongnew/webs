@@ -1,36 +1,47 @@
 {
-    "version": 2,
-    "headers": [
-      {
-        "source": "/(.*)\\.(jpg|jpeg|png|gif|ico|webp|svg|css|js)",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "public, max-age=31536000, immutable"
-          }
-        ]
-      }
-    ],
-    "rewrites": [
-      {
-        "source": "/",
-        "destination": "/index.html"
-      },
-      {
-        "source": "/guides",
-        "destination": "/guides.html"
-      },
-  
-      {
-        "source": "/news",
-        "destination": "/news.html"
-      },
-
-      {
-        "source": "/reviews",
-        "destination": "/reviews.html"
-      }
-    ],
-    "trailingSlash": false,
-    "cleanUrls": true
-  }
+  "version": 2,
+  "headers": [
+    {
+      "source": "/(.*)\\.(jpg|jpeg|png|gif|ico|webp|svg|css|js)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/:path*",
+      "destination": "https://www.gshaftmaster.com/:path*",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "gshaftmaster.com"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/guides",
+      "destination": "/guides.html"
+    },
+    {
+      "source": "/news",
+      "destination": "/news.html"
+    },
+    {
+      "source": "/reviews",
+      "destination": "/reviews.html"
+    }
+  ],
+  "trailingSlash": false,
+  "cleanUrls": true
+}

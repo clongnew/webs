@@ -1,13 +1,41 @@
-# Robots.txt for GShaftMaster Pro
-# Golf Shaft Reviews and Guides Website
-
 User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap: https://gshaftmaster.com/sitemap.xml
+User-agent: Googlebot
+Allow: /
 
-# Disallow admin and private directories
+User-agent: Bingbot
+Allow: /
+
+
+# ---- OpenAI ----
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+# ---- Anthropic ----
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: claude-user
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# ---- Perplexity----
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
 Disallow: /admin/
 Disallow: /cgi-bin/
 
+Sitemap: https://www.gshaftmaster.com/sitemap.xml
